@@ -1,0 +1,12 @@
+package application;
+
+public class Manager extends Employee{
+
+	private double _bonus;
+
+	@Override
+	public double calcPay()
+	{
+		return (this._hours * this._hourlySalary) + _bonus;
+	}
+}

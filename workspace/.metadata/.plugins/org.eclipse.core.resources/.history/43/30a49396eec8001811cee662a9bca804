@@ -1,0 +1,38 @@
+package application;
+
+public class Employee {
+
+	protected String _name;
+	protected double _hours;
+	protected double _hourlySalary;
+
+	public String getName() {
+		return _name;
+	}
+
+	public void setName(String _name) {
+		this._name = _name;
+	}
+
+	public double getHours() {
+		return _hours;
+	}
+
+	public void setHours(double _hours) {
+		this._hours = _hours;
+	}
+
+	public double getHourlySalary() {
+		return _hourlySalary;
+	}
+
+	public void setHourlySalary(double _hourlySalary) {
+		this._hourlySalary = _hourlySalary;
+	}
+
+	public double calcPay()
+	{
+		return this._hours * this._hourlySalary;
+	}
+
+}

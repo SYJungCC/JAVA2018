@@ -1,0 +1,24 @@
+package application;
+import javax.swing.JOptionPane;
+
+public class Lotto {
+
+	public static void main(String [] args)
+	{
+		int g = -1;
+		while (g < 0)
+		{
+			String input = JOptionPane.showInputDialog("Please enter your name:");
+
+			if(input.length() > 0)
+			{
+				g++;
+				System.out.println("TS");
+			}else
+			{
+				System.out.println("Enter your name");
+			}
+		}
+	}
+
+}

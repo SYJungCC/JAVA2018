@@ -1,0 +1,14 @@
+package application;
+
+public class Employee {
+
+	protected String _name;
+	protected double _hours;
+	protected double _hourlySalary;
+
+	public double calcPay()
+	{
+		return this._hours * this._hourlySalary;
+	}
+
+}

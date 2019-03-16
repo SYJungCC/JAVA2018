@@ -1,0 +1,78 @@
+package application;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Exercise2 {
+
+
+	static final int MAX_PLAY_COUNT = 5;					//Maximum Game which player can play.
+
+	public static void main(String [] args)
+	{
+		Scanner input = new Scanner(System.in);	//for user Input
+		Lotto lotto = new Lotto();				//Lotto Class
+		boolean keepTry = true;					//checking user keep put in number
+		boolean doesUserWin = false;			//cheking user win the game or not
+		//int userSum = 0;						//sum number of userInput
+		int answerCount = 0;					//counting how many times user play the game
+
+
+		//checking Lotto Random number;
+		lotto.getTestLog();
+
+		//Start loop
+		do
+		{
+			System.out.println("Please enter number (3 ~ 27):");
+			int userInput = input.nextInt();	//get user Input
+
+			if(3 <= userInput && 27 >= userInput)
+			{
+
+				for(int i = 0;  i< lotto.getLottoArray().length; ++i)
+				{
+					if(lotto.getLottoArray()[i] == userInput)
+					{
+						doesUserWin = true;
+						keepTry = false;
+						break;
+					}
+				}
+
+
+			}
+			else
+			{
+				//if user input the number which is not between 3 and 27, it shows this wronig.
+				System.out.println("you wrote wrong number, please write between 3 and 27");
+			}
+
+		}while(keepTry); //finish loop
+
+		System.out.printf("Your sum is %d.Thank you!\n", userSum);	//Display player's sum number
+
+		//checking between lotto random number and user number
+		for(int i = 0;  i< lotto.getLottoArray().length; ++i)
+		{
+			if(lotto.getLottoArray()[i] == userSum)
+			{
+				doesUserWin = true;
+				break;
+			}
+		}
+
+		//if user win, display win
+		if(doesUserWin)
+		{
+			System.out.println("You are Win");
+		}
+		//or not, display lose
+		else
+		{
+			System.out.println("You are lose");
+		}
+
+	}
+}

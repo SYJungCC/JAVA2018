@@ -1,0 +1,7 @@
+package Lotto;
+import javax.swing.JOptionPane;
+
+public class Lotto {
+
+	
+}

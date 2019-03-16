@@ -1,0 +1,14 @@
+package application;
+
+public class Program {
+	public static void main(String[] args)
+	{
+		//Declarations & Initialization
+		Employee emp  = new Employee();
+		Manager man = new Manager();
+
+		emp.setName("John Smith");
+		emp.setHours(40);
+		emp.setHourlySalary(25.65);
+	}
+}

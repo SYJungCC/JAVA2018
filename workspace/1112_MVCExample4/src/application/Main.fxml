@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label layoutX="112.0" prefHeight="55.0" prefWidth="176.0" text="Example4">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="_btnAccept" layoutX="46.0" layoutY="323.0" mnemonicParsing="false" onAction="#onAcceptClicked" text="Accept">
+         <tooltip>
+            <Tooltip text="Click to Accept" />
+         </tooltip></Button>
+      <Button fx:id="_btnReject" layoutX="176.0" layoutY="323.0" mnemonicParsing="false" onAction="#onRejectClicked" text="Reject">
+         <tooltip>
+            <Tooltip text="Click to Reject" />
+         </tooltip></Button>
+      <TextArea fx:id="_txtOutput" editable="false" layoutX="22.0" layoutY="149.0" prefHeight="157.0" prefWidth="355.0" />
+      <Button fx:id="_btnClear" layoutX="301.0" layoutY="323.0" mnemonicParsing="false" onAction="#onClearClicekd" text="Clear">
+         <tooltip>
+            <Tooltip text="Click to Clean" />
+         </tooltip>
+      </Button>
+      <TextField fx:id="_txtInput" layoutX="19.0" layoutY="71.0" promptText="Enter &amp; number" />
+      <Button fx:id="_btnSubmit" layoutX="267.0" layoutY="71.0" mnemonicParsing="false" onAction="#onSubmitClicekd" text="Submit" />
+      <Label fx:id="_lblError" layoutX="22.0" layoutY="116.0" prefHeight="21.0" prefWidth="355.0" textFill="RED" />
+   </children>
+</AnchorPane>

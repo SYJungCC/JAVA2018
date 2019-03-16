@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;ShapeEditor/src/application&apos;&#x0D;&#x0A;- Original project: &apos;1015_ShapeEditor&apos;&#x0D;&#x0A;- Destination element: &apos;ShapeEditor/src/application&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     application.Shape.java&#x0D;&#x0A;     application.Circle.java&#x0D;&#x0A;     application.Program.java" description="Copy compilation units" destination="=ShapeEditor/src&lt;application" element1="/src&lt;application{Shape.java" element2="/src&lt;application{Circle.java" element3="/src&lt;application{Program.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1540853290758" units="3" version="1.0"/>
+</session>

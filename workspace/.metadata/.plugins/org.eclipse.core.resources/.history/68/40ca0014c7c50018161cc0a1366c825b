@@ -1,0 +1,77 @@
+package application;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Exercise2 {
+	public static void main(String [] args)
+	{
+		Scanner input = new Scanner(System.in);	//for user Input
+		Lotto lotto = new Lotto();				//Lotto Class
+		boolean keepTry = true;					//checking user keep put in number
+		boolean doesUserWin = false;			//cheking user win the game or not
+		int userSum = 0;						//sum number of userInput
+		int answerCount = 0;					//counting how many times user play the game
+		final int maxCount = 5;					//Maximum Game which player can play.
+
+		//checking Lotto Random number;
+		//lotto.getTestLog();
+
+		//Start loop
+		do
+		{
+			System.out.println("Please enter number (3 ~ 27):");
+			int userInput = input.nextInt();	//get user Input
+
+			if(3 <= userInput && 27 >= userInput)
+			{
+				userSum +=userInput;	//adding user Input
+				answerCount++;			//adding count which is user answer
+
+				if(answerCount < 5)	//did player play the game over 5 times?
+				{
+					//Display for player - how many times they left & their sum number
+					System.out.printf("Your sum is %d. Do you wanna keep add?\nYou left %d times (Y/N)\n", userSum, maxCount - answerCount);
+					String str = input.next();	//get user input
+
+					//checking that if user want to play more or not.
+					keepTry = (str.equals("y") || str.equals("Y") || str.equals("Yes") || str.equals("YES")) ? true : false;
+				}
+				else
+				{
+					//if user played 5 times, it should be finish.
+					System.out.println(" Finish! You played 5 times.");
+					keepTry = false;
+				}
+			}
+			else
+			{
+				//if user input the number which is not between 3 and 27, it shows this wronig.
+				System.out.println("you wrote wrong number, please write between 3 and 27");
+			}
+		}while(keepTry); //finsih loop
+
+		System.out.printf("Your sum is %d.Thank you!\n", userSum);	//Display player's sum number
+
+		//checking between lotto random number and user number
+		for(int i = 0;  i< lotto.getLottoArray().length; ++i)
+		{
+			if(lotto.getLottoArray()[i] == userSum)
+			{
+				doesUserWin = true;
+				break;
+			}
+		}
+
+		if(doesUserWin)
+		{
+			System.out.println("You are Win");
+		}
+		else
+		{
+			System.out.println("You are lose");
+		}
+
+	}
+}

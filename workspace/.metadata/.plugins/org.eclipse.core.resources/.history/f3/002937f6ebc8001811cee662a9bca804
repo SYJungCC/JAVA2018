@@ -1,0 +1,11 @@
+package application;
+
+public class Manager extends Employee{
+
+	private double _bonus;
+
+	public double calcPay()
+	{
+		this.hours
+	}
+}

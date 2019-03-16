@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 6 elements from project &apos;1105_FlowPaneDemo&apos;&#x0D;&#x0A;- Original project: &apos;1105_FlowPaneDemo&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     application.Circle.java&#x0D;&#x0A;     application.Line.java&#x0D;&#x0A;     application.Painting.java&#x0D;&#x0A;     application.Point.java&#x0D;&#x0A;     application.Program.java&#x0D;&#x0A;     application.Shape.java" description="Delete elements" element1="/src&lt;application{Painting.java" element2="/src&lt;application{Circle.java" element3="/src&lt;application{Point.java" element4="/src&lt;application{Program.java" element5="/src&lt;application{Line.java" element6="/src&lt;application{Shape.java" elements="6" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1541461691889" subPackages="false" version="1.0"/>
+</session>

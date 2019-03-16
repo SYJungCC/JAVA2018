@@ -1,0 +1,24 @@
+package application;
+
+public class Program {
+	public static void main(String[] args)
+	{
+		//Declarations & Initialization
+		Employee emp  = new Employee();
+		Manager man = new Manager();
+
+		//set the values
+		emp.setName("John Smith");
+		emp.setHours(40);
+		emp.setHourlySalary(25.65);
+
+		man.setName("Lorenzo Amato");
+		man.setHours(40);
+		man.setHourlySalary(30);
+
+		//print the salary
+		System.out.printf("The salary for %s is %.2f\n", emp.getName(), emp.calcPay());
+		System.out.printf("The salary for %s is %.2f", emp.getName(), emp.calcPay());
+
+	}
+}

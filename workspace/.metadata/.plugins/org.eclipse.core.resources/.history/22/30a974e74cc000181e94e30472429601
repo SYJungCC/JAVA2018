@@ -1,0 +1,27 @@
+package application;
+import javax.swing.JOptionPane;
+
+public class Lotto {
+
+	int answer[] = new int[3];
+
+	public static void main(String [] args)
+	{
+		final int number = 5;
+		String input;
+		do
+		{
+			input = JOptionPane.showInputDialog("Please enter number :");
+
+
+
+		}while(input.length() < 0);
+
+	}
+
+	void MakingRandom()
+	{
+
+	}
+
+}
